@@ -1,0 +1,29 @@
+/* Estilização básica */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilizando o contêiner de vídeo */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #000;
+}
+
+/* Fazendo o vídeo ocupar toda a área do contêiner */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
